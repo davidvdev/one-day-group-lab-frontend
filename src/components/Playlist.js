@@ -19,12 +19,10 @@ const Playlist = (props) => {
                             <div className="playlist-line-two">
                                 <h4>{song.time}</h4>
                                 <div className="right-side">
-                                    <button className="delete-button" onClick={() => {
-                                        props.deleteSong(song)
-                                    }}>Delete</button>
-                                    <button className="favorite-button" onClick={() => {
-                                        props.addFavorites(song)
-                                    }}>Favorite</button>
+                                    <i className="delete-button far fa-trash-alt" onClick={() => {props.deleteSong(song)
+                                    }}></i>
+                                    <i className="favorite-button far fa-heart" onClick={() => {props.addFavorites(song)
+                                    }}></i>
                                 </div>
                             </div>
                         </div>
