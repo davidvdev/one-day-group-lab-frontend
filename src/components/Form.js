@@ -17,6 +17,7 @@ const Form = (props) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <h2 className="form-title">ADD A NEW SONG</h2>
             <div>TITLE</div>
             <input
                 type="text"

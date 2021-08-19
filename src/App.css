@@ -32,6 +32,21 @@ hr {
     background-color: var(--red);
     border: none
 }
+.app-header>h1 {
+  margin-top: 0;
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-disc {
+  display: flex;
+  align-self: flex-end;
+}
 
 /* PLAYLIST STYLING */
 .playlist-container {
@@ -65,6 +80,24 @@ article {
 }
 
 /* FAVORITE SONGS LIST STYLING */
+.favorite-headers {
+  display: flex;
+}
+
+.favorite-title {
+  width: 250px;
+  margin: 0 0 15px 0;
+}
+
+.song-headers {
+  display: flex;
+}
+
+
+.favorite-song {
+  list-style-type: none;
+  width: 250px;
+}
 
 /* FORM STYLING */
 form div {
