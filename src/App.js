@@ -24,7 +24,6 @@ function App() {
 
   //function to add to favorites list
   const addFavorites = (song) => {
-    console.log("HERE",song)
     setFavoriteSong([...favoriteSong, song])
   };
 
