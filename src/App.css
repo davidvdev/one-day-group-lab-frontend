@@ -1,0 +1,46 @@
+/* * { border: 1px solid teal; } */
+
+:root {
+ --red: #A93F55;
+}
+/* UNIVERSAL STYLING */
+h4 {
+    font-family: monospace;
+    margin: 2px;
+}
+
+/* HEADER STYLING */
+hr {
+    height: 3px;
+    background-color: var(--red);
+    border: none
+}
+
+/* PLAYLIST STYLING */
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-playlist-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-line-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.song-title {
+    color: teal;
+}
+
+.playlist-line-two {
+
+}
+
+/* FAVORITE SONGS LIST STYLING */
+
+/* FORM STYLING */
