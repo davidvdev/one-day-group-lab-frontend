@@ -9,12 +9,15 @@
 /* UNIVERSAL STYLING */
 h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
 }
 
 h1 {
     font-size: 4em;
     margin: 0;
+}
+
+h2 {
+    margin: 0.5em 0;
 }
 
 h3 {
@@ -46,6 +49,8 @@ hr {
 .header-disc {
   display: flex;
   align-self: flex-end;
+  text-align: right;
+  font-size: 0.8em;
 }
 
 /* PLAYLIST STYLING */
@@ -122,6 +127,9 @@ form input {
     color: white;
     font-weight: bold;
     border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .add-button:active {
