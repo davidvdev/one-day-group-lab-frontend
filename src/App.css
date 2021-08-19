@@ -85,23 +85,40 @@ article {
 }
 
 /* FAVORITE SONGS LIST STYLING */
+.favorite-container {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.favorite-container h3{
+    grid-column: 1 / 5;
+}
+
 .favorite-headers {
-  display: flex;
+  display: grid;
+  grid-column: 1 / 5;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .favorite-title {
-  width: 250px;
-  margin: 0 0 15px 0;
+    justify-content: space-between;
 }
 
 .song-headers {
-  display: flex;
+    font-weight: bold;
+  display: grid;
+  grid-column: 1 / 5;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 
 .favorite-song {
   list-style-type: none;
-  width: 250px;
+}
+
+.song-header li:first-child {
+    color: var(--teal);
 }
 
 /* FORM STYLING */
