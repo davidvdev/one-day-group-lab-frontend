@@ -1,7 +1,10 @@
-/* * { border: 1px solid teal; } */
+* { box-sizing: border-box; }
 
 :root {
  --red: #A93F55;
+ --red-dark: #612430;
+ --teal: #6E8B98;
+ --gray: #E9E9E9
 }
 /* UNIVERSAL STYLING */
 h4 {
@@ -25,22 +28,47 @@ hr {
 .main-playlist-display {
     display: flex;
     flex-direction: column;
+    padding: 2px;
 }
 
-.playlist-line-one {
+.playlist-line-one, .playlist-line-two {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .song-title {
-    color: teal;
-}
-
-.playlist-line-two {
-
+    color: var(--teal);
 }
 
 /* FAVORITE SONGS LIST STYLING */
 
 /* FORM STYLING */
+form div {
+    font-family: monospace;
+    color: var(--teal);
+    font-weight: bold;
+}
+
+form input {
+    margin: 3px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    height: 2.5em;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.add-button:active {
+    color: var(--gray);
+    background-color: var(--red-dark);
+}
