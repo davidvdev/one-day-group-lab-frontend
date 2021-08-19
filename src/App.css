@@ -7,8 +7,22 @@
  --gray: #E9E9E9
 }
 /* UNIVERSAL STYLING */
+h1, h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h4 {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin: 2px;
 }
 
@@ -25,9 +39,14 @@ hr {
     flex-direction: column;
 }
 
+article {
+    margin: 0.5em 0;
+}
+
 .main-playlist-display {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 2px;
 }
 
@@ -41,11 +60,15 @@ hr {
     color: var(--teal);
 }
 
+.favorite-button {
+    margin-left: 1.5em;
+}
+
 /* FAVORITE SONGS LIST STYLING */
 
 /* FORM STYLING */
 form div {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: var(--teal);
     font-weight: bold;
 }
