@@ -3,7 +3,7 @@ import './App.css';
 //import components
 import Playlist from './components/Playlist';
 import Form from './components/Form';
-
+import FavsList from './components/FavsList';
 
 function App() {
 
@@ -20,7 +20,21 @@ function App() {
   }
 
   //state to track favorite songs
-  const [selectedSong, setSelectedSong] = useState([emptySong]);
+  const [favoriteSong, setFavoriteSong] = useState([]);
+
+  //function to add to favorites list
+  const addFavorites = (song) => {
+    console.log("HERE",song)
+    setFavoriteSong([...favoriteSong, song])
+  };
+
+  //function to remove favorites from list
+  const removeFavorites = (song) => {
+    const index = favoriteSong.findIndex((s) => song.id === s.id)
+    const updatedArray = [...favoriteSong]
+    updatedArray.splice(index, 1)
+    setFavoriteSong(updatedArray)
+  };
 
   //Gets list of songs for the playlist
   const getSongs = () => {
@@ -59,8 +73,8 @@ function App() {
     <div className="App">
       <h1>TUNR.</h1>
       <hr />
-      <div><Playlist songs={songs} deleteSong={deleteSong}/></div>
-      <div>Favorite List Component</div>
+      <div><Playlist songs={songs} deleteSong={deleteSong} addFavorites={addFavorites}/></div>
+      <div><FavsList songs={favoriteSong} removeFavorites={removeFavorites}/></div>
       <div><Form songs={emptySong} handleSubmit={handleCreate}/></div>
     </div>
   );

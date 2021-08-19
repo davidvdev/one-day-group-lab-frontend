@@ -3,7 +3,6 @@ import React from "react-dom"
 import "../App.css"
 
 const Form = (props) => {
-    console.log(props)
     const [formData, setFormData] = useState(props.songs)
 
     const handleSubmit = (event) => {
