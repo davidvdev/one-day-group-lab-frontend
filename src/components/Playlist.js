@@ -23,7 +23,7 @@ const Playlist = (props) => {
                                         props.deleteSong(song)
                                     }}>Delete</button>
                                     <button className="favorite-button" onClick={() => {
-                                        props.updateFavorites(song)
+                                        props.addFavorites(song)
                                     }}>Favorite</button>
                                 </div>
                             </div>
