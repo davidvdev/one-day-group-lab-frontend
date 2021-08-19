@@ -7,7 +7,7 @@ const FavsList = (props) => {
 
     return (
         <div className="favorite-container">
-            <h2>Favorite Songs List</h2>
+            <h3>Favorite Songs List</h3>
                     <div className="favorite-headers">
                         <h4 className="favorite-title">Song</h4>
                         <h4 className="favorite-title">Artist</h4>
@@ -16,13 +16,13 @@ const FavsList = (props) => {
                     {songs.map((song) => (
                         <div className="song-headers">
                             <div className="song-header">
-                                <li>{song.title}</li>
+                                <li className="favorite-song">{song.title}</li>
                             </div>
                             <div className="artist-header">
-                                <li>{song.artist}</li>
+                                <li className="favorite-song">{song.artist}</li>
                             </div>
                             <div className="time-header">
-                                <li>{song.time}</li>
+                                <li className="favorite-song">{song.time}</li>
                             </div>
                             <button className="remove-favorite-button" onClick={() => {
                                         props.removeFavorites(song)

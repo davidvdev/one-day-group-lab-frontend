@@ -70,7 +70,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>TUNR.</h1>
+      <div className="app-header">
+        <h1>TUNR.</h1>
+        <div className="header-disc">
+          <h4>FOR ALL YOUR PLAYLIST NEEDS</h4>
+        </div>
+      </div>
       <hr />
       <div><Playlist songs={songs} deleteSong={deleteSong} addFavorites={addFavorites}/></div>
       <div><FavsList songs={favoriteSong} removeFavorites={removeFavorites}/></div>
